@@ -1,0 +1,32 @@
+{
+  "family": "__FAMILY__",
+  "networkMode": "awsvpc",
+  "executionRoleArn": "__EXEC_ROLE__",
+  "taskRoleArn": "__TASK_ROLE__",
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "512",
+  "memory": "1024",
+  "containerDefinitions": [
+    {
+      "name": "backend",
+      "image": "__IMAGE__",
+      "portMappings": [{ "containerPort": 8080, "protocol": "tcp" }],
+      "environment": [
+        { "name": "SPRING_PROFILES_ACTIVE", "value": "prod" },
+        { "name": "SPRING_DATASOURCE_URL", "value": "__DB_URL__" }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/__FAMILY__",
+          "awslogs-region": "__AWS_REGION__",
+          "awslogs-stream-prefix": "ecs"
+        }
+      },
+      "secrets": [
+        { "name": "DB_USERNAME", "valueFrom": "__DB_SECRET_USERNAME__" },
+        { "name": "DB_PASSWORD", "valueFrom": "__DB_SECRET_PASSWORD__" }
+      ]
+    }
+  ]
+}

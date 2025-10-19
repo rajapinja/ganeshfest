@@ -1,0 +1,67 @@
+server:
+  port: 9494
+
+app:
+  upload-dir: C:/_Raja/_SpringBoot/ganeshfest/uploads/
+
+spring:
+  application:
+    name: ganesh-fest
+  web:
+    resources:
+      static-locations:
+        - classpath:/static/
+        - file:C:/_Raja/_SpringBoot/ganeshfest/uploads/
+
+
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+
+
+
+  kafka:
+    bootstrap-servers: 192.168.29.215:39092
+    admin:
+      auto-create: true
+    topic:
+      ganesh-fest-orders: ganesh.fest-orders
+      ganesh-fest-billing: ganesh.fest-billing
+      ganesh-fest-cart-items: ganesh.fest-cart-items
+      ganesh-fest-ai-orders: ganesh.fest-ai-orders
+
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ganeshfest
+    username: postgres
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.jdbc.time_zone: Asia/Kolkata
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: always
+      livenessState:
+        enabled: true
+      readinessState:
+        enabled: true
+    info:
+      enabled: true
+
+info:
+  app:
+    name: Ganesh-Fest Backend
+    description: Ganesh Festival Product and Services Application
+    version: 0.0.1-SNAPSHOT
+
+
+    #mk3rV9fIHWfCmT9LzfAIrFVVGQ5mau30

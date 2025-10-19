@@ -1,0 +1,11 @@
+variable "aws_region" { default = "us-east-1" }
+variable "project" { default = "interview-prep" }
+variable "vpc_cidr" { default = "10.0.0.0/16" }
+variable "public_subnets" { default = ["10.0.1.0/24","10.0.2.0/24"] }
+variable "private_subnets" { default = ["10.0.11.0/24","10.0.12.0/24"] }
+variable "db_instance_class" { default = "db.t4g.small" } # adjust for production
+variable "db_allocated_storage" { default = 20 }
+variable "db_multi_az" { default = false }
+variable "frontend_bucket_name" { default = null } # if null Terraform will create one
+variable "domain_name" { default = "" } # optional for ACM/CloudFront
+variable "acm_certificate_arn" { default = "" } # if you have one

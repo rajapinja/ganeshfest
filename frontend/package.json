@@ -1,0 +1,35 @@
+{
+  "name": "vinayaka-services",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@hello-pangea/dnd": "^18.0.1",
+    "@heroicons/react": "^1.0.6",
+    "array-move": "^4.0.0",
+    "axios": "^1.7.2",
+    "framer-motion": "^12.23.12",
+    "keycloak-js": "^23.0.7",
+    "lucide-react": "^0.541.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-dropzone": "^14.3.8",
+    "react-hot-toast": "^2.6.0",
+    "react-router-dom": "^6.26.1",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.4",
+    "unocss": "^0.61.9",
+    "vite": "^5.4.2"
+  }
+}
