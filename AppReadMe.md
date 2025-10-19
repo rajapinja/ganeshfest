@@ -9,13 +9,13 @@ Our **Ganesh Fest App** is a one-stop solution to plan, celebrate, and customize
 
 **Key Features:**
 
-| Icon | Feature | Description |
-|------|---------|-------------|
-| 🛍️ | Vendor Marketplace | Register and showcase services: idol making, catering, decoration, tent-house rentals, pooja essentials. |
-| 📅 | Easy Booking & Orders | Customers can book services or order products in advance for hassle-free festival planning. |
-| 🤖 | AI-Powered Customization | Design and personalize Ganesh idols, decorations, or accessories with AI tools. |
-| 🔒 | Trusted Connections | Verified vendors, transparent pricing, and secure transactions. |
-| 🎊 | Festival Hub | Connect devotees and vendors; share photos, updates, and experiences. |
+| Feature | Description |
+|---------|-------------|
+| ![Marketplace](https://img.shields.io/badge/🛍️-Vendor%20Marketplace-orange) | Register and showcase services: idol making, catering, decoration, tent-house rentals, pooja essentials. |
+| ![Booking](https://img.shields.io/badge/📅-Easy%20Booking%20%26%20Orders-blue) | Customers can book services or order products in advance for hassle-free festival planning. |
+| ![AI](https://img.shields.io/badge/🤖-AI%20Customization-success) | Design and personalize Ganesh idols, decorations, or accessories with AI tools. |
+| ![Security](https://img.shields.io/badge/🔒-Trusted%20Connections-red) | Verified vendors, transparent pricing, and secure transactions. |
+| ![Festival](https://img.shields.io/badge/🎊-Festival%20Hub-yellow) | Connect devotees and vendors; share photos, updates, and experiences. |
 
 > Where **tradition meets technology**—making Ganesh Chaturthi celebrations **personalized, convenient, and joyful**.
 
@@ -58,21 +58,23 @@ Our **Ganesh Fest App** is a one-stop solution to plan, celebrate, and customize
 ## 💻 Tech Stack
 
 **Frontend**
-- ⚛️ React + Vite – Fast, modern framework  
-- 🎨 TailwindCSS + UnoCSS – Responsive, utility-first styling  
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react)  
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite)  
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwind-css)  
+![UnoCSS](https://img.shields.io/badge/UnoCSS-000000?style=for-the-badge&logo=unocss)
 
 **Backend & Services**
-- 🟩 Spring Boot – Core APIs & business logic  
-- 🔑 Keycloak – Secure authentication & roles  
-- 🐘 PostgreSQL + PgAdmin – Relational DB with admin interface  
-- 🔄 Apache Kafka + Kafka Manager – Real-time notifications  
+![Spring Boot](https://img.shields.io/badge/SpringBoot-6DB33F?style=for-the-badge&logo=spring)  
+![Keycloak](https://img.shields.io/badge/Keycloak-EE0000?style=for-the-badge&logo=keycloak)  
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql)  
+![Kafka](https://img.shields.io/badge/Apache%20Kafka-231F20?style=for-the-badge&logo=apachekafka)
 
 **Infrastructure**
-- 🐳 Docker Compose – Containerization & orchestration  
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker)
 
 **AI / ML**
-- 🤖 AI Models – Idol & decoration customization  
-- 💡 AI Tools – GitHub Copilot, ChatGPT for dev acceleration  
+![AI](https://img.shields.io/badge/AI-FF6F61?style=for-the-badge)  
+![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-8DD6F9?style=for-the-badge&logo=github)
 
 ---
 
@@ -98,7 +100,7 @@ Our **Ganesh Fest App** is a one-stop solution to plan, celebrate, and customize
 
 ## 🏆 Competitors & Differentiation
 - **No direct competitors** for end-to-end Ganesh Fest platform  
-- What we do differently:  
+- We provide:
   - 🎯 Festival-specific, time-sensitive services  
   - 🕉️ Cultural relevance & traditions incorporated  
   - 🤖 AI personalization of idols & decorations  
@@ -134,6 +136,3 @@ Our **Ganesh Fest App** is a one-stop solution to plan, celebrate, and customize
 **Revenue Model:** Service fee, subscription plans, hospital partnerships  
 
 > Healthcare-as-a-Service: bridging rural communities & urban healthcare systems  
-
----
-
